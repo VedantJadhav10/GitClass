@@ -1,0 +1,20 @@
+ git init GitTask 
+ cd GitTask/
+ notepad Sum.txt, notepad Diff.txt, notepad Prod.txt
+ git checkout -b Dev
+ git checkout -b Test
+ git add Sum.txt, git add Diff.txt
+ git commit -m "Added 2 files to Test Branch"
+ git checkout -b Dev
+ git add Prod.txt
+ git commit -m "Added 1 file to Dev Branch"
+ notepad Sum.txt
+ git diff Sum.txt, git status, git status Sum.txt
+ git checkout
+ git merge Dev Test
+ git remote add origin https://github.com/VedantJadhav10/GitClass.git
+ git push -u origin master
+ mkdir GitTaskClone
+ git clone https://github.com/VedantJadhav10/GitClass.git
+
+ notepad Solution.txt
